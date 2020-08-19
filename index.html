@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="main">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yan test</title>
+    <script src="js/main.js"></script>
+    <script src="js/lang/translator.js"></script>
+    <title>{-cv.name-}</title>
 </head>
-<body>
-    
+<body onload="init()">
+    <button onclick="changeTo('en')">{-en-}</button>
+    <button onclick="changeTo('he')">{-he-}</button>
+    <div>test {-hello-}</div>
+    <div><div>test2 {-test-}</div></div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        {-sup yan-}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
