@@ -1,0 +1,10 @@
+{
+    "name":"Yan Rips",
+
+    "navbar.about": "About Me",
+    "navbar.portfolio": "Portfolio",
+    "navbar.resume": "Resume",
+    "navbar.services": "Services",
+    "navbar.contant": "Contact",
+    "navbar.bio":"Hi, my name is Yan Rips and I'm a fullstack software developer."
+}
