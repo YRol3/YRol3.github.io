@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <h1 class="title"><a href="home">{{'name' | translate}}</a></h1>
+    <div id="navigation">
+        <div class="profile-section">
+            <img class="image" src="assets/images/profile.png" alt="image">			
+            <div class="bio">{{'navbar.bio' | translate}}</div>
+            <ul class="social-list">
+                <li class="item" *ngFor="let social of socialList">
+                    <a [href]="social.ref" target="_blank" [rel]="social.name">
+                        <svg  class="social-svg"  [ngStyle]="svgStyle(social.size)" 
+                                [attr.viewBox]="social.viewBox"><path [attr.d]="social.path"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <ul class="navbar-nav">
+            <a *ngFor="let navigation of navigationElements" [href]="navigation.ref">
+                <li class="item">
+                    <svg [attr.viewBox]="navigation.viewBox" ><path [attr.d]="navigation.path"></path></svg>
+                    {{navigation.name | translate}}</li>
+            </a>
+        </ul>
+    </div>
+</nav>

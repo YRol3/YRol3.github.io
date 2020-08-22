@@ -1,0 +1,82 @@
+.navbar{
+    position: absolute;
+    width:280px;
+    height:100%;
+    background:#54B689;
+    color:white;
+
+    .title{
+        text-align:center;
+        font-size:2rem;
+        margin:1rem 0;
+    }
+}
+
+.profile-section{
+    margin: 0 1.5rem;
+    .image{
+        object-fit: cover;
+        border-radius:50%;
+        width:160px;
+        height:160px;
+        display: block;
+        margin:auto;
+        margin-bottom:1rem;
+    }
+
+    .bio{
+        line-height: 1.5rem;
+    }
+
+    .social-list{
+        list-style:none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin:1rem 0;
+    }
+    hr{
+        border-color: rgba(0,0,0,0.08);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        height: 0;
+        overflow: visible;
+    }
+} 
+.social-list{
+    .item{
+        width: 32px;
+        height: 32px;
+        padding-top: 6px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.4s ease-in-out;
+        background-color: #fff;
+    }
+}
+   
+.social-svg{
+    fill: #54B689;
+}
+
+.navbar-nav{
+    list-style: none;
+    margin: 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+    a .item{
+        padding:5px 0;
+        font-size:1.25em;
+        margin: 0.2em 0;
+        svg{
+            margin: 0 .5em;
+            width:0.7em;
+            fill:white;
+        }
+    }
+}
+
+
