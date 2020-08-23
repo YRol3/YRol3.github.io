@@ -1,0 +1,15 @@
+{
+
+    "first.name":"יאן",
+    "last.name":"ריפס",
+
+    "english":"אנגלית",
+    "hebrew":"עברית",
+
+    "navbar.about": "קצת עלי",
+    "navbar.portfolio": "תיק עבודות",
+    "navbar.resume": "רזומה",
+    "navbar.services": "שירותים",
+    "navbar.contant": "צור קשר",
+    "navbar.bio":"היי, אני יאן ריפס ואני מתכנת פולסטאק"
+}

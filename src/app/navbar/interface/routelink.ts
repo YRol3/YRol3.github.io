@@ -1,5 +1,5 @@
-export interface SocialLink{
-    size:number,
+export interface RouteLink{
+    size?:number,
     ref:string,
     viewBox:string,
     path:string,

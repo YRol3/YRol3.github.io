@@ -1,5 +1,10 @@
 {
-    "name":"Yan Rips",
+
+    "first.name":"Yan",
+    "last.name":"Rips",
+
+    "english":"English",
+    "hebrew":"Hebrew",
 
     "navbar.about": "About Me",
     "navbar.portfolio": "Portfolio",
