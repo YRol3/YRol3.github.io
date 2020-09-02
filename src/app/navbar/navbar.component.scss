@@ -7,6 +7,7 @@
 
 .title-container{
     margin:5px;
+    height:10vh;
 }
 
 .lang{
@@ -23,7 +24,7 @@
 }
 
 .navbar{
-
+    box-shadow:#0000004f 0px 0px 10px 1px;
     position: fixed;
     z-index:10;
     width:280px;
@@ -34,7 +35,7 @@
     .title{
         text-align:center;
         font-size:2rem;
-        padding:1rem 0;
+        padding:1rem 0 0 0;
         margin:0;
         font-weight: 100;  
         .firstName{
@@ -42,7 +43,7 @@
             font-weight: bold;
         }
     }
-    border-right:3px solid mat-color($primary, darker);
+    //border-right:3px solid mat-color($primary, darker);
 }
 
 .hamburger{
@@ -66,7 +67,7 @@ hr{
         width:160px;
         height:160px;
         display: block;
-        margin:1rem auto;
+        margin:0 auto 5vh auto;
     }
 
     .bio{
@@ -78,13 +79,12 @@ hr{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin:1rem 0;
     }
 } 
 .social-list{
     .item{
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         padding-top: 6px;
         display: inline-block;
         text-align: center;
@@ -164,6 +164,7 @@ hr{
     stroke-width: 6;
     }
     .navbar{
+        box-shadow:unset;
         position: fixed;
         top:0;
         width:100%;

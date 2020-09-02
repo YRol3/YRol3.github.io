@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
     {name:"hebrew", flag: "./assets/images/flags/israel.jpg", value:"he"},
     {name:"english", flag: "./assets/images/flags/us.png", value:"en"}
   ]
-  public menuOpen:boolean = true;
+  public menuOpen:boolean = false;
 
   @Input()
   onScroll:Observable<boolean>;
