@@ -1,6 +1,6 @@
-<div >
+<div class="main">
   <navbar [onScroll]="onScrollSubject.asObservable()"></navbar>
-  <div class="page" [class.rtl]="isRtl" >
-    <router-outlet></router-outlet>
+  <div class="page" [@routerTransition]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </div>

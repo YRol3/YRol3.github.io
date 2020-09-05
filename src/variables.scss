@@ -3,8 +3,6 @@
 
 $primary: mat-palette($mat-light-blue);
 $accent:  mat-palette($mat-deep-orange);
-
-// the default warn palette is red, so use that if the theme doesn't define one
 $warn:    mat-palette($mat-red);
 
 // re-define the indigo-pink theme

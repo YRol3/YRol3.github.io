@@ -12,8 +12,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
-
+import { MatSelectModule } from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './services/services.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -26,9 +27,11 @@ export function createTranslateLoader(http: HttpClient) {
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule, 
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -38,7 +41,6 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
     }
     }),
-    NoopAnimationsModule,
     MatSelectModule,
   ],
   providers: [],
