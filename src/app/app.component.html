@@ -1,6 +1,0 @@
-<div class="main">
-  <navbar [onScroll]="onScrollSubject.asObservable()"></navbar>
-  <div class="page" [@routerTransition]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </div>
-</div>
