@@ -52,7 +52,7 @@ canvas.addEventListener('touchstart', handleTouch)
 canvas.addEventListener('touchmove', handleTouch)
 function animate(){
     hue ++;
-    ctx.fillStyle = "rgba(0,0,0,0.2)"
+    ctx.fillStyle = "rgba(0,0,0,0.1)"
     ctx.fillRect(0,0, canvas.width, canvas.height)
     requestAnimationFrame(animate)
     handleParticals()
@@ -63,7 +63,7 @@ total = 0
 loops = 0
 interval = null
 function playAnimation(){
-    interval = setTimeout(()=> playAnimation(), 15)
+    interval = setTimeout(()=> playAnimation(), 30)
     for(let i = total;i < total + 50 && i < max; i++){
         particals.push(new Partical(record[i].x, record[i].y))
     }
@@ -72,7 +72,7 @@ function playAnimation(){
         loops++;
         
     }
-    total+= 10;
+    total+= 5;
     if(loops > 4){
         clearInterval(interval)
         setTimeout(()=>nextAnimation(),1500)
@@ -84,8 +84,8 @@ function nextAnimation(){
     for(let i = 0; i < record.length; i++){
         particals.push(new Partical(record[i].x, record[i].y))
     }
-    interval = setTimeout(()=> nextAnimation(), time+=10)
-    if(time > 500)
+    interval = setTimeout(()=> nextAnimation(), time+=1)
+    if(time > 200)
         clearInterval(interval)
 }
 playAnimation()
