@@ -63,7 +63,7 @@ total = 0
 loops = 0
 interval = null
 function playAnimation(){
-    interval = setTimeout(()=> playAnimation(), 30)
+    interval = setTimeout(()=> playAnimation(), 15)
     for(let i = total;i < total + 50 && i < max; i++){
         particals.push(new Partical(record[i].x, record[i].y))
     }
@@ -84,7 +84,7 @@ function nextAnimation(){
     for(let i = 0; i < record.length; i++){
         particals.push(new Partical(record[i].x, record[i].y))
     }
-    interval = setTimeout(()=> nextAnimation(), time+=1)
+    interval = setTimeout(()=> nextAnimation(), time+=5)
     if(time > 200)
         clearInterval(interval)
 }
